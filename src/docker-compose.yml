@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+    nginx_server:
+      build: ./e6
+      container_name: my_nginx
+      ports:
+        - "80:8080"
+    hw_server:
+      build: .
+      container_name: hw
+
